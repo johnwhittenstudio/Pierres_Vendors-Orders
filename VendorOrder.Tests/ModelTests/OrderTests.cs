@@ -66,5 +66,53 @@ namespace VendorOrder.Tests
       Assert.AreEqual(date, instanceDate);
     }
 
+
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      //Arrange
+      string title = "Sourdough";
+      string description = "5 loaves";
+      string price = "$15.00";
+      string date = "02/24/2022";
+      Order newOrder = new Order(title, description, price, date);
+
+      //Act
+      string instanceTitle = newOrder.Title;
+      string instanceDescription = newOrder.Description;
+      string instancePrice = newOrder.Price;
+      string instanceDate = newOrder.Date;
+
+      //Assert
+      Assert.AreEqual(title, instanceTitle);
+      Assert.AreEqual(description, instanceDescription);
+      Assert.AreEqual(price, instancePrice);
+      Assert.AreEqual(date, instanceDate);
+    }
+
+
+    // [TestMethod]
+    // public void SetDescription_SetDescription_String()
+    // {
+    //   //Arrange
+    //   string title = "Sourdough";
+    //   string description = "5 loaves";
+    //   string price = "$15.00";
+    //   string date = "02/24/2022";
+    //   Order newOrder = new Order(title, description, price, date);
+
+    //   //Act
+    //   string updatedDescription = "12 loaves";
+    //   newOrder.Description = updatedDescription;
+    //   string resultDescription = newOrder.Description;
+    //   string updatedPrice = "$36.00";
+    //   newOrder.Price = updatedPrice;
+    //   string resultPrice = newOrder.Price;
+
+    //   //Assert
+    //   Assert.AreEqual(updatedDescription, resultDescription);
+    //   Assert.AreEqual(updatedPrice, resultPrice);
+    // }
+
   }
 }  
