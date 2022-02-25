@@ -151,6 +151,22 @@ namespace VendorOrder.Tests
       CollectionAssert.AreEqual(newList, result);
     }
 
+    [TestMethod]
+    public void GetId_OrdersInstantiateWithAnIdAndGetterReturns_Int()
+    {
+      //Arrange
+      string title = "Sourdough";
+      string description = "5 loaves";
+      string price = "$15.00";
+      string date = "02/24/2022";
+      Order newOrder = new Order(title, description, price, date);
+
+      //Act
+      int result = newOrder.Id;
+
+      //Assert
+      Assert.AreEqual(1, result);
+    }
 
   }
 }  
