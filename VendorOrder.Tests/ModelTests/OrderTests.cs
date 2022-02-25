@@ -114,5 +114,19 @@ namespace VendorOrder.Tests
       Assert.AreEqual(updatedPrice, resultPrice);
     }
 
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_OrderList()
+    {
+      // Arrange
+      List<Order> newList = new List<Order> { };
+
+      // Act
+      List<Order> result = Order.GetAll();
+
+      // Assert
+      CollectionAssert.AreEqual(newList, result);
+    }
+
+
   }
 }  
