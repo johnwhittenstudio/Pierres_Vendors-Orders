@@ -56,10 +56,10 @@ namespace VendorOrder.Tests
     public void GetAll_ReturnsAllVendorObjects_VendorList()
     {
       //Arrange
-      string name01 = "Utensils";
+      string name01 = "Utah Utensils";
       string description01 = "coffee stirs";
-      string name02 = "Spices";
-      string description02 = "everything seasoning";
+      string name02 = "Spencer's Spices";
+      string description02 = "everything bagel seasoning";
       Vendor newVendor1 = new Vendor(name01, description01);
       Vendor newVendor2 = new Vendor(name02, description02);
       List<Vendor> newList = new List<Vendor> { newVendor1, newVendor2 };
@@ -75,10 +75,10 @@ namespace VendorOrder.Tests
     public void Find_ReturnsCorrectVendor_Vendor()
     {
       //Arrange
-      string name01 = "Utensils";
+      string name01 = "Utah Utensils";
       string description01 = "coffee stirs";
-      string name02 = "Spices";
-      string description02 = "everything seasoning";
+      string name02 = "Spencer's Spices";
+      string description02 = "everything bagel seasoning";
       Vendor newVendor1 = new Vendor(name01, description01);
       Vendor newVendor2 = new Vendor(name02, description02);
 
@@ -87,6 +87,27 @@ namespace VendorOrder.Tests
 
       //Assert
       Assert.AreEqual(newVendor2, result);
+    }
+
+    [TestMethod]
+    public void AddOrder_AssociatesOrderWithVendor_OrderList()
+    {
+      //Arrange
+      string title = "Sourdough";
+      string description = "5 loaves";
+      string price = "$15.00";
+      string date = "02/24/2022";
+      Order newOrder = new Order(title, description, price, date);
+      List<Order> newList = new List<Order> { newOrder };
+      string name = "Spencer's Spices";
+      Vendor newVendor = new Vendor(name, description);
+      newVendor.AddOrder(newOrder);
+
+      //Act
+      List<Order> result = newVendor.Orders;
+
+      //Assert
+      CollectionAssert.AreEqual(newList, result);
     }
 
   }
