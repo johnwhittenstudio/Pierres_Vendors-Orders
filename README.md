@@ -1,9 +1,9 @@
 # **OMG! _the_ Order Management Guru**
-### by _**John Whitten**_
+#### by _**John Whitten**_
 
-### _February 25, 2022_
+#### _February 25, 2022_
 
-### _a C# MVC Vendor & Order application._
+#### _a C# MVC Vendor & Order application._
 
 ## Technologies Used
 - C#
