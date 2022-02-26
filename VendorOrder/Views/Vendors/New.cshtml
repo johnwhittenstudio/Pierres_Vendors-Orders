@@ -15,7 +15,7 @@
     <h4>Add a Vendor here:</h4>
 
     <div class="container" id="vendors">
-      <div class="row" id="vendors">
+      @* <div class="row" id="vendors"> *@
         <form action="/vendors" method="post">
           <label for="vendorName"><p>Vendor name</p></label>
           <input id="vendorName" name="vendorName" type="text">
@@ -23,9 +23,9 @@
           <input id="vendorDescription" name="vendorDescription" type="text">
           <button id="add" type="submit">Add</button>
         </form>
-      </div>
+      @* </div> *@
     </div>
 
-    <p><a href="/vendors">Return to Vendors.</a> &nbsp &nbsp &nbsp <a href='/'>Return to Home Page</a></p>
+    <p><a href="/vendors">Return to Vendors</a> &nbsp &nbsp &nbsp <a href='/'>Return to Home Page</a></p>
   </body>
 </html>
