@@ -1,9 +1,8 @@
 # **OMG! _the_ Order Management Guru**
-#### by _**John Whitten**_
-
-#### _February 25, 2022_
-
 #### _a C# MVC Vendor & Order application._
+
+#### by **John Whitten**
+#### February 25, 2022
 
 ## Technologies Used
 - C#
@@ -11,21 +10,21 @@
 - REPL
 - MySQL
 - Razor
-_ ASP.NET Core
+- ASP.NET Core
 
 ## Description
 The second C# project at Epicodus. This MVC application allow users to add multiple vendors and multiple orders to those vendors.
 
 _The application should include the following functionality:_
 
-- _A splash page is used._
-- _Project has Vendor and Order classes._
-- _Project uses two or more controllers._
-- _Models are thoroughly tested._
-- _GET and POST requests/responses are used successfully._
-- _MVC routes follow RESTful conventions._
-- _Project is in a polished, portfolio-quality state._
-- _The prompt’s required functionality and baseline project requirements are in place by the deadline._
+- A splash page is used.
+- Project has Vendor and Order classes.
+- Project uses two or more controllers.
+- Models are thoroughly tested.
+- GET and POST requests/responses are used successfully.
+- MVC routes follow RESTful conventions.
+- Project is in a polished, portfolio-quality state.
+- The prompt’s required functionality and baseline project requirements are in place by the deadline.
 
 
 
@@ -51,7 +50,7 @@ _The application should include the following functionality:_
 
 ## License
 
-[MIT License](https://opensource.org/licenses/MIT) © **2022** _**John Whitten**_
+[MIT License](https://opensource.org/licenses/MIT) © 2022 _John Whitten_
 
 ## Contact
 John Whitten: [johnwhitten.studio@gmail.com](mailto:johnwhitten.studio@gmail.com)
