@@ -51,7 +51,7 @@ _The application should include the following functionality:_
 
 ## License
 
-[MIT License](https://opensource.org/licenses/MIT) Published _**2022**_ by _**John Whitten**_
+[MIT License](https://opensource.org/licenses/MIT) © **2022** _**John Whitten**_
 
 ## Contact
-- John Whitten at [johnwhitten.studio@gmail.com](mailto:johnwhitten.studio@gmail.com)
+John Whitten: [johnwhitten.studio@gmail.com](mailto:johnwhitten.studio@gmail.com)
