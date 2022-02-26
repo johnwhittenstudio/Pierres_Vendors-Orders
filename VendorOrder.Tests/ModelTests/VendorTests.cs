@@ -52,22 +52,24 @@ namespace VendorOrder.Tests
     }
 
 
-    // [TestMethod]
-    // public void GetAll_ReturnsAllVendorObjects_VendorList()
-    // {
-    //   //Arrange
-    //   string name01 = "Utensils";
-    //   string name02 = "Spices";
-    //   Vendor newVendor1 = new Vendor(name01);
-    //   Vendor newVendor2 = new Vendor(name02);
-    //   List<Vendor> newList = new List<Vendor> { newVendor1, newVendor2 };
+    [TestMethod]
+    public void GetAll_ReturnsAllVendorObjects_VendorList()
+    {
+      //Arrange
+      string name01 = "Utensils";
+      string description01 = "coffee stirs";
+      string name02 = "Spices";
+      string description02 = "everything seasoning";
+      Vendor newVendor1 = new Vendor(name01, description01);
+      Vendor newVendor2 = new Vendor(name02, description02);
+      List<Vendor> newList = new List<Vendor> { newVendor1, newVendor2 };
 
-    //   //Act
-    //   List<Vendor> result = Vendor.GetAll();
+      //Act
+      List<Vendor> result = Vendor.GetAll();
 
-    //   //Assert
-    //   CollectionAssert.AreEqual(newList, result);
-    // }
+      //Assert
+      CollectionAssert.AreEqual(newList, result);
+    }
 
 
 
