@@ -10,16 +10,22 @@
     <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body>
-    <h1>Add a Vendor</h1>
-    <p>Add a Vendor here:</p>
+    <h1>OMG! Order Management Guru</h1>
+    <h3>Add a Vendor</h3>
+    <h4>Add a Vendor here:</h4>
 
-    <form action="/vendors" method="post">
-      <label for="vendorName">Vendor name</label>
-      <input id="vendorName" name="vendorName" type="text">
-      <button type="submit">Add</button>
-    </form>
+    <div class="container" id="vendors">
+      <div class="row" id="vendors">
+        <form action="/vendors" method="post">
+          <label for="vendorName"><p>Vendor name</p></label>
+          <input id="vendorName" name="vendorName" type="text">
+          <label for="vendorDescription"><p> &nbsp &nbsp &nbsp Vendor description</p></label>
+          <input id="vendorDescription" name="vendorDescription" type="text">
+          <button id="add" type="submit">Add</button>
+        </form>
+      </div>
+    </div>
 
-    <p><a href='/'>Return to Home Page</a></p>
-    <p><a href="/vendors">Return to Vendors.</a></p>
+    <p><a href="/vendors">Return to Vendors.</a> &nbsp &nbsp &nbsp <a href='/'>Return to Home Page</a></p>
   </body>
 </html>

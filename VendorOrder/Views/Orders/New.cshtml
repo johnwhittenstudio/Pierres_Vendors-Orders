@@ -5,24 +5,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>OMG OMS</title>
+    <title>OMG OMG</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body>
-    <h1>Add a new order to @Model.Name</h1>
+    <h1>OMG! Order Management Guru</h1>
+    <h3>Add a new order to @Model.Name</h3>
 
-    <form action="/vendors/@Model.Id/orders" method="post">
-      <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-      <label for="orderTitle">Order Title</label>
-      <input id="orderTitle" name="orderTitle" type="text">
-      <label for="orderDescription">Order Description</label>
-      <input id="orderDescription" name="orderDescription" type="text">
-      <label for="orderPrice">Order Price</label>
-      <input id="orderPrice" name="orderPrice" type="text">
-      <label for="orderDate">Order Date</label>
-      <input placeholder="mm-dd-yyyy" id="orderDate" name="orderDate" type="text">
-      <button type='submit'>Add Order</button>
-    </form>
+    <div class="container" id="container2">
+      <div class="row2">
+        <form action="/vendors/@Model.Id/orders" method="post">
+          <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+          <label for="orderTitle">Order Title</label>
+          <input id="orderTitle" name="orderTitle" type="text">
+          <label for="orderDescription"> &nbsp &nbsp &nbsp Order Description</label>
+          <input id="orderDescription" name="orderDescription" type="text">
+          <br>
+          <br>
+          <label for="orderPrice">Order Price</label>
+          <input id="orderPrice" name="orderPrice" type="text">
+          <label for="orderDate">&nbsp &nbsp &nbsp Order Date</label>
+          <input placeholder="mm-dd-yyyy" id="orderDate" name="orderDate" type="text">
+          <br>
+          <br>
+          <button id="add" type='submit'>Add Order</button>
+        </form>
+      </div>
+    </div>
+
   </body>
 </html>

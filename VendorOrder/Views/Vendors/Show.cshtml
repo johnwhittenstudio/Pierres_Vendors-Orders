@@ -3,26 +3,35 @@
 }
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>OMG OMS</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="~/css/styles.css">
-  </head>
-  <body>
-    @using VendorOrder.Models;
 
-    <h3>Here are all the orders for this vendor:</h3>
+<head>
+  <meta charset="utf-8">
+  <title>OMG OMS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="~/css/styles.css">
+</head>
 
-    <ol>
-    @foreach (Order order in @Model["orders"])
-    {
-      <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
-    }
-    </ol>
+<body>
+  @using VendorOrder.Models;
+  <h1>OMG! Order Management Guru</h1>
+  <h3><em>Here are all the orders for this vendor:</em></h3>
+  <hr>
+@* <div class="container" id="orders">
+  <div class="row"> *@
+    @* <ol> *@
+      @foreach (Order order in @Model["orders"])
+      {
+        @* <li> *@
+          <h3><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></h3>
+        @* </li> *@
+      }
+    @* </ol> *@
+  @* </div>
+</div> *@
+  <hr>
+  <br>
+  <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a> &nbsp &nbsp &nbsp <a href='/vendors'>Return to vendor list</a> &nbsp &nbsp &nbsp <a href='/'>Return to Home Page</a></p>
+</body>
 
-    <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a></p>
-    <p><a href='/vendors'>Return to vendor list</a></p>
-    <p><a href='/'>Return to Home Page</a></p>
-  </body>
 </html>
